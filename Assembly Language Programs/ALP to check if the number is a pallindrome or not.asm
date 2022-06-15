@@ -19,5 +19,5 @@ LOOP2 SUBS R1,R1,R2
 	ADDPL R3,R3,#1
 	BPL LOOP2
 	ADDMI R4,R1,R2
-	BX LR ; Branch to link register , move to program it program counter
+	BX LR ; Branch to link register , move to program counter
 	END
