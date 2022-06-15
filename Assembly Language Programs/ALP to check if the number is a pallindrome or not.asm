@@ -6,8 +6,8 @@ ENTRY
 	MOV R5,#0
 	MOV R10,#10
 LOOP BL DIV
-	MLA R5,R10,R5,R4
-	CMP R3,#0
+	MLA R5,R10,R5,R4 ; MLA stands for Multiply and Accumulate
+	CMP R3,#0 
 	MOVNE R1,R3
 	BNE LOOP
 	CMP R5,R6
