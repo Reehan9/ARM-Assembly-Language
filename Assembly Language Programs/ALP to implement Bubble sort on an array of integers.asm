@@ -13,7 +13,7 @@ next_comp
 	CMP R4 , R5
 	BLE no_exch
 	
-	STRB R4 , [R3]
+	STRB R4 , [R3]      ; swapping of both the numbers
 	STRB R5, [R3 , #-1]
 
 no_exch
