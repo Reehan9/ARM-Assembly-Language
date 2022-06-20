@@ -11,7 +11,7 @@ next_itr
 	BGT OVER
 	
 	ADD R4 , R1 , R3
-	ASR  R4 , #1
+	ASR  R4 , #1 ; Arthemetic Shift Right Operation , which basically divides the value in R4 register by 2
 	MOV R5 , #0
 	ADD R7 ,  R4 , LSL #2 ; Logical Shift Left
 	ADD R5,R5,R0
