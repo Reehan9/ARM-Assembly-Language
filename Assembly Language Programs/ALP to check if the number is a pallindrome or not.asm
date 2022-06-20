@@ -16,8 +16,8 @@ LOOP BL DIV
 STOP B STOP
 DIV MOV R3,#0 ; Division Process
 LOOP2 SUBS R1,R1,R2
-	ADDPL R3,R3,#1
-	BPL LOOP2
+	ADDPL R3,R3,#1 ; Increment the value  of R3 register by 1  until the value of R1 register turns negative 
+	BPL LOOP2 ; Branch if R1 is positive
 	ADDMI R4,R1,R2
 	BX LR ; Branch to link register , move to program counter , MOV PC,LR
 	END
