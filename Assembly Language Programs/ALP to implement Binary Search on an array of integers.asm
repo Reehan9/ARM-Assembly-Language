@@ -20,7 +20,7 @@ next_itr
 	CMP R6 ,R2 ; mid vs key
 	BEQ OVER ; if (mid-element==key) then exit the program
 	SUBGT R4 , R3 , R3 ; subract if greater than.
-	ADDLT R4 , R1 , R4 if(mid-element<key)  , low = mid - 1 ; 
+	ADDLT R4 , R1 , R4 ; if(mid-element<key)  , low = mid - 1 ; 
 	B next_itr
 OVER B OVER
 ARRAY DCD 1,2,3,4,5
