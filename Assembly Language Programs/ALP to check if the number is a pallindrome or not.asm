@@ -14,10 +14,10 @@ LOOP BL DIV
 	MOVEQ R7,#1 ; If the number is a pallindrome then R7 register will be 1
 	MOVNE R7,#0 ; If the number is not pallindrome then R7 register will be 0
 STOP B STOP
-DIV MOV R3,#0 ; Division 
+DIV MOV R3,#0 ; Division Process
 LOOP2 SUBS R1,R1,R2
 	ADDPL R3,R3,#1
 	BPL LOOP2
 	ADDMI R4,R1,R2
-	BX LR ; Branch to link register , move to program counter
+	BX LR ; Branch to link register , move to program counter , MOV PC,LR
 	END
