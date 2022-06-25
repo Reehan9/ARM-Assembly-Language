@@ -8,7 +8,7 @@ NEXT
 	 ADD R0,R0,#2   ; next even number
 	 ADD R1,R1,#1  ; increament of counter variable
 	 CMP R1,#11   ; loop condition
-	 BNE NEXT
+	 BNE NEXT ; branch not equal
 	 STR R2,[R3]	; Store the value in the memory
 OVER	 B OVER
 	 END
