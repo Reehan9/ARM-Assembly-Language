@@ -8,8 +8,8 @@ next_pass
 	MOV R2 , R1
 	LDR R3, =ARRAY
 next_comp
-	LDRB R4 , [R3] , #1 ; ++counter , counter++
-	LDRB R5 , [R3] ; r3+1
+	LDRB R4 , [R3] , #1 
+	LDRB R5 , [R3] 
 	CMP R4 , R5
 	BLE no_exch
 	
