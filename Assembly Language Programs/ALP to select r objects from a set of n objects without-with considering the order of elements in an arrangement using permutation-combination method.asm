@@ -1,21 +1,22 @@
 	AREA NPR, CODE
-N RN 6
-R RN 3
+N RN 1
+R RN 2
 DIVIDEND RN 3
 DIVISOR RN 4
-	MOV N,#6
+	MOV N,#7
 	MOV R,#3
 LOOP
 	MOV R5,N
 	BL FACT
 	MOV DIVIDEND,R6
-	MOV R5,R
+	;MOV R5,R ; Include this statment for Ncr
+	;BL FACT ; Include this statment for Ncr
+	;MOV DIVISOR,R6 ; Include this statment for Ncr
+	SUB R7,N,R
+	MOV R5,R7
 	BL FACT
-	MOV DIVISOR,R6
-	;SUB R7,N,R  ;  Use these steps to find nCr
-	;MOV R5,R7    
-	;BL FACT
-	;MUL DIVISOR,R6,DIVISOR
+	;MUL DIVISOR,R6,DIVISOR ; For NCR
+	MOV DIVISOR , R6 ; Delete this line for NCR
 	BL DIV
 GO B GO
 FACT
