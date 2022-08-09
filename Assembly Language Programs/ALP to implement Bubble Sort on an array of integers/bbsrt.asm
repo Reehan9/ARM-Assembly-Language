@@ -1,8 +1,7 @@
 	AREA BUBBLE , CODE
 	ENTRY
 
-	LDR R0 , =n
-	LDRB R1 , [R0]
+	MOV R1 , #5
 	SUB R1 , R1 , #1
 next_pass
 	MOV R2 , R1
@@ -27,5 +26,4 @@ GO B GO
 
 	AREA _DATA , DATA
 ARRAY DCB 3,2,1,4,5
-n	SPACE 1
 	END
