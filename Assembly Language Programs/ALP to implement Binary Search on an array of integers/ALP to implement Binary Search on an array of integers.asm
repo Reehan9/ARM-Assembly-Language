@@ -18,8 +18,8 @@ next_itr
 	
 	CMP R6 ,R2 ; mid vs key
 	BEQ OVER ; if (mid-element==key) then exit the program
-	SUBGT R3 , R4 , #1 ; subract if greater thanm ; high = mid +1 
-	ADDLT R1 , R4 , #1 ; if(mid-element<key)  , low = mid - 1 ; 
+	SUBGT R3 , R4 , #1 ; subract if greater thanm ; high = mid - 1 
+	ADDLT R1 , R4 , #1 ; if(mid-element<key)  , low = mid + 1 ; 
 	B next_itr
 OVER B OVER
 ARRAY DCD 0x11,0x22,0x33,0x44,0x55
